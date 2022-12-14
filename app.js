@@ -6,14 +6,14 @@ app.set("views", path.join(__dirname,"views"));
 app.set("view engine","ejs");
 app.use(express.static(__dirname + '/public'));
 
-app.get("/", function (req, res) {
-  res.send("IT WORKED");
+app.get("/order", function (req, res) {
+  res.send("order add here");
 });
 app.get("/new", function (req, res) {
-  res.send("New also worked");
+  res.send("New add here");
 });
 
-app.get("/ok", function (req, res) {
+app.get("/", function (req, res) {
     res.render("index");
   });
 
